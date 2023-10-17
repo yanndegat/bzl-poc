@@ -1,0 +1,5 @@
+/bazel-bin
+/bazel-bzl-poc
+/bazel-out
+/bazel-testlogs
+*.lock

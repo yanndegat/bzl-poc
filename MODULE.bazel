@@ -1,0 +1,10 @@
+module(
+    name = "bzl-poc",
+    version = "0.0.1",
+)
+
+bazel_dep(name = "go-hello", version = "")
+local_path_override(
+    module_name = "go-hello",
+    path = "./components/go-hello",
+)
