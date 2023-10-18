@@ -8,3 +8,9 @@ local_path_override(
     module_name = "go-hello",
     path = "./components/go-hello",
 )
+
+bazel_dep(name = "go-hello-image", version = "")
+local_path_override(
+    module_name = "go-hello-image",
+    path = "./oci-images/go-hello",
+)

@@ -2,4 +2,4 @@ schemaVersion: 2.0.0
 commandTests:
   - name: 'test'
     command: '/go-hello'
-    expectedOutput: ['"Hello World"']
+    expectedOutput: ['Hello World']

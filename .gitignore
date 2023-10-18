@@ -1,5 +1,3 @@
-/bazel-bin
-/bazel-bzl-poc
-/bazel-out
-/bazel-testlogs
+bazel-*
 *.lock
+go.sum

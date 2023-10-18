@@ -1,6 +1,18 @@
+module(
+    name = "go-hello-image",
+    version = "0.0.1",
+)
+
+bazel_dep(name = "aspect_bazel_lib", version = "1.32.0")
 bazel_dep(name = "container_structure_test", version = "1.15.0")
 bazel_dep(name = "rules_pkg", version = "0.8.1")
 bazel_dep(name = "rules_oci", version = "1.2.0")
+
+bazel_dep(name = "go-hello", version = "")
+local_path_override(
+    module_name = "go-hello",
+    path = "../../components/go-hello",
+)
 
 oci = use_extension("@rules_oci//oci:extensions.bzl", "oci")
 
